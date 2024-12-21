@@ -2,6 +2,13 @@ import React from "react";
 import css from "./Nav.module.css";
 
 const Nav = () => {
+  const closeNav = () => {
+    const nav = document.querySelector(".navbar-collapse");
+    if (nav && nav.classList.contains("show")) {
+      nav.classList.remove("show");
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
       <div className="container">
@@ -22,28 +29,28 @@ const Nav = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto">
-            <a className="nav-link active" href="#home">
+            <a className="nav-link " href="#home" onClick={closeNav}>
               Home
             </a>
-            <a className="nav-link" href="#about">
+            <a className="nav-link" href="#aboutus" onClick={closeNav}>
               About
             </a>
-            <a className="nav-link" href="#projects">
+            <a className="nav-link" href="#projects" onClick={closeNav}>
               Projects
             </a>
-            <a className="nav-link" href="#services">
+            <a className="nav-link" href="#services" onClick={closeNav}>
               Services
             </a>
-            <a className="nav-link" href="#pricing">
+            <a className="nav-link" href="#pricing" onClick={closeNav}>
               Pricing
             </a>
-            <a className="nav-link" href="#testimonials">
+            <a className="nav-link" href="#testimonials" onClick={closeNav}>
               Testimonials
             </a>
-            <a className="nav-link" href="#news">
+            <a className="nav-link" href="#news" onClick={closeNav}>
               News
             </a>
-            <a className="nav-link" href="#location">
+            <a className="nav-link" href="#location" onClick={closeNav}>
               Location
             </a>
           </div>

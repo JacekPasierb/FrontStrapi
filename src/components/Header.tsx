@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header id="home" className="home py-5">
+    <header id="home" className="home ">
       <div
         id="carouselExampleCaptions"
         className="carousel slide "

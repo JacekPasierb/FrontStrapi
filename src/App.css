@@ -15,6 +15,10 @@ body {
   position: relative;
 }
 
+[id] {
+  scroll-margin-top: 10px;
+}
+
 .hero-shadow {
   position: absolute;
   top: 0;
@@ -85,6 +89,7 @@ body {
 }
 
 /* aboutus */
+
 .aboutus h2 {
   font-size: 1.8rem;
   font-weight: bold;
@@ -112,6 +117,30 @@ body {
   font-size: 1.4rem;
 }
 
+.parallax-background {
+  position: relative;
+  background-image: url("./image/parallax-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.achievements i {
+font-size: 4.4rem;
+}
+
+.achievements h4 {
+font-size: 4rem;
+font-weight: bold;
+}
+
+.achievements p {
+font-size: 1.4rem;
+text-transform: uppercase;
+}
+
 @media (min-width: 576px) {
   .home .btn {
     padding: 1em 2em;
@@ -136,7 +165,7 @@ body {
   }
   .aboutus-img {
     height: auto;
-    margin-left: 40px;
+    margin-block: auto;
   }
 }
 
