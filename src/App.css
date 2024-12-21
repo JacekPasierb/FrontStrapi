@@ -85,10 +85,31 @@ body {
 }
 
 /* aboutus */
-.aboutus h4 {
-  font-size: 1.4rem;
+.aboutus h2 {
+  font-size: 1.8rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.aboutus p {
+  font-size: 1.4rem;
+}
+
+.aboutus-img {
+  object-fit: cover;
+}
+
+.aboutus i {
+  font-size: 3rem;
+}
+
+.aboutus-cards h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.aboutus-cards p {
+  font-size: 1.4rem;
 }
 
 @media (min-width: 576px) {
@@ -112,6 +133,10 @@ body {
 
   .aboutus h4 {
     font-size: 2.4rem;
+  }
+  .aboutus-img {
+    height: auto;
+    margin-left: 40px;
   }
 }
 
