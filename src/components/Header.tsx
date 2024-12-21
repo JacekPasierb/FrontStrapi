@@ -65,11 +65,11 @@ const Header = () => {
             <div className="hero-shadow"></div>
           </div>
           <div className="carousel-item carousel-img-three ">
-            <div className="carousel-caption h-100 p-5 d-flex flex-column  justify-content-center align-items-center text-uppercase">
+            <div className="carousel-caption h-100 p-5 d-flex flex-column  justify-content-center align-items-start text-start text-uppercase">
               <h2 className="mb-3">
                 We can handle the most ambitious projects
               </h2>
-              <button type="button" className="btn btn-warning ms-sm-5">
+              <button type="button" className="btn btn-warning mt-5">
                 Contact us
               </button>
             </div>
