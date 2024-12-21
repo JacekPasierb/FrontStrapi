@@ -38,11 +38,11 @@ const Header = () => {
                 Edifice creates and implements sustainable construction projects
                 for you.
               </p>
-              <div className="buttons mt-5 d-flex flex-row flex-column flex-sm-row">
+              <div className="buttons mt-5 d-flex flex-row flex-column flex-sm-row text-light ">
                 <button type="button" className="btn btn-dark mb-4  mb-sm-0">
                   See services
                 </button>
-                <button type="button" className="btn btn-warning ms-sm-5">
+                <button type="button" className="btn orangeBgColor  ms-sm-5 text-light">
                   Contact us
                 </button>
               </div>
@@ -53,11 +53,11 @@ const Header = () => {
             <div className="carousel-caption h-100 p-5 d-flex flex-column  justify-content-center align-items-center text-uppercase">
               <h2 className="mb-3">Edifice</h2>
               <p className="m-0">Experienced Construction Professionals</p>
-              <div className="buttons mt-5 d-flex flex-row flex-column flex-sm-row">
+              <div className="buttons mt-5 d-flex flex-row flex-column flex-sm-row ">
                 <button type="button" className="btn btn-dark mb-4  mb-sm-0">
                   See services
                 </button>
-                <button type="button" className="btn btn-warning ms-sm-5">
+                <button type="button" className="btn orangeBgColor ms-sm-5 text-light">
                   Contact us
                 </button>
               </div>
@@ -69,7 +69,7 @@ const Header = () => {
               <h2 className="mb-3">
                 We can handle the most ambitious projects
               </h2>
-              <button type="button" className="btn btn-warning mt-5">
+              <button type="button" className="btn orangeBgColor text-light mt-5">
                 Contact us
               </button>
             </div>

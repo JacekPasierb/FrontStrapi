@@ -28,6 +28,14 @@ body {
 .navbar-light .navbar-nav .nav-link.active {
   color: rgb(255, 102, 0);
 }
+
+.orangeBgColor {
+  background-color: rgb(255, 102, 0);
+}
+
+.orangeColor {
+  color: rgb(255, 102, 0);
+}
 /* nawigacja */
 
 .navbar-light .navbar-brand {
@@ -73,11 +81,23 @@ body {
 .home .btn {
   font-size: 1.4rem;
   padding: 0.5em 1em;
+  text-transform: uppercase;
+}
+
+/* aboutus */
+.aboutus h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 @media (min-width: 576px) {
   .home .btn {
     padding: 1em 2em;
+  }
+
+  .aboutus h4 {
+    font-size: 1.8rem;
   }
 }
 
@@ -88,6 +108,10 @@ body {
 
   .home p {
     font-size: 2.6rem;
+  }
+
+  .aboutus h4 {
+    font-size: 2.4rem;
   }
 }
 
