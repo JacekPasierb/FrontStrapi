@@ -53,13 +53,42 @@ body {
   z-index: 0;
 }
 .carousel-img-one {
-  background-image: url("./image/slider-slide-5-1920x1280base.jpg");
+  background-image: url("./image/slider-slide-corporate-1base.jpg");
 }
 .carousel-img-two {
-  background-image: url("./image/slider-slide-corporate-1base.jpg");
+  background-image: url("./image/slider-slide-5-1920x1280base.jpg");
 }
 .carousel-img-three {
   background-image: url("./image/slider-slide-corporateBase.jpg");
+}
+
+.home h2 {
+  font-size: 2.6rem;
+}
+
+.home p {
+  font-size: 1.4rem;
+}
+
+.home .btn {
+  font-size: 1.4rem;
+  padding: 0.5em 1em;
+}
+
+@media (min-width: 576px) {
+  .home .btn {
+    padding: 1em 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  .home h2 {
+    font-size: 4.4rem;
+  }
+
+  .home p {
+    font-size: 2.6rem;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -68,10 +97,10 @@ body {
   }
 
   .carousel-img-one {
-    background-image: url("./image/slider-slide-5-1920x1280.jpg");
+    background-image: url("./image/slider-slide-corporate-1.jpg");
   }
   .carousel-img-two {
-    background-image: url("./image/slider-slide-corporate-1.jpg");
+    background-image: url("./image/slider-slide-5-1920x1280.jpg");
   }
   .carousel-img-three {
     background-image: url("./image/slider-slide-corporate.jpg");

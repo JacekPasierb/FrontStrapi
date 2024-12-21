@@ -3,7 +3,7 @@ import css from "./Nav.module.css";
 
 const Nav = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light py-5 fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
       <div className="container">
         <a className="navbar-brand" href="#">
           <i className={`bi bi-buildings ${css.orangeColor} me-4`}></i>

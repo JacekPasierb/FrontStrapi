@@ -2,10 +2,10 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header id="home" className="home">
+    <header id="home" className="home py-5">
       <div
         id="carouselExampleCaptions"
-        className="carousel slide"
+        className="carousel slide "
         data-bs-ride="carousel"
       >
         <div className="carousel-indicators">
@@ -32,15 +32,47 @@ const Header = () => {
         </div>
         <div className="carousel-inner text-light text-center">
           <div className="carousel-item carousel-img-one active">
-            <div className="carousel-caption h-100 p-5 d-flex flex-column justify-contend-end justify-content-md-center align-items-center"></div>
+            <div className="carousel-caption h-100 p-5 d-flex flex-column justify-content-center align-items-center text-uppercase">
+              <h2 className="mb-3">Reliable Construction Services</h2>
+              <p className="m-0">
+                Edifice creates and implements sustainable construction projects
+                for you.
+              </p>
+              <div className="buttons mt-5 d-flex flex-row flex-column flex-sm-row">
+                <button type="button" className="btn btn-dark mb-4  mb-sm-0">
+                  See services
+                </button>
+                <button type="button" className="btn btn-warning ms-sm-5">
+                  Contact us
+                </button>
+              </div>
+            </div>
             <div className="hero-shadow"></div>
           </div>
           <div className="carousel-item carousel-img-two ">
-            <div className="carousel-caption h-100 p-5 d-flex flex-column justify-contend-end justify-content-md-center align-items-center"></div>
+            <div className="carousel-caption h-100 p-5 d-flex flex-column  justify-content-center align-items-center text-uppercase">
+              <h2 className="mb-3">Edifice</h2>
+              <p className="m-0">Experienced Construction Professionals</p>
+              <div className="buttons mt-5 d-flex flex-row flex-column flex-sm-row">
+                <button type="button" className="btn btn-dark mb-4  mb-sm-0">
+                  See services
+                </button>
+                <button type="button" className="btn btn-warning ms-sm-5">
+                  Contact us
+                </button>
+              </div>
+            </div>
             <div className="hero-shadow"></div>
           </div>
           <div className="carousel-item carousel-img-three ">
-            <div className="carousel-caption h-100 p-5 d-flex flex-column justify-contend-end justify-content-md-center align-items-center"></div>
+            <div className="carousel-caption h-100 p-5 d-flex flex-column  justify-content-center align-items-center text-uppercase">
+              <h2 className="mb-3">
+                We can handle the most ambitious projects
+              </h2>
+              <button type="button" className="btn btn-warning ms-sm-5">
+                Contact us
+              </button>
+            </div>
             <div className="hero-shadow"></div>
           </div>
         </div>
