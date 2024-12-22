@@ -1,6 +1,6 @@
 import React from "react";
 
-const Aboutus = () => {
+const Aboutus:React.FC = () => {
   return (
     <>
       <section id="aboutus" className="aboutus py-5 ">
