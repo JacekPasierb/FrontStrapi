@@ -7,7 +7,11 @@ const Aboutus = () => {
         <div className="container py-5">
           <div>
             <h2 className="text-center ">About Us</h2>
-            <hr className={`my-4 w-25 mx-auto orangeColor`} />
+            <div className="row justify-content-center">
+              <div className="col-1">
+                <hr className="orangeColor" />
+              </div>
+            </div>
           </div>
           <div className="row my-5  ">
             <div className="col-lg-6 px-md-5 ">
@@ -83,50 +87,46 @@ const Aboutus = () => {
       </section>
       <section className="achievements parallax-background">
         <div className="container py-5">
-          <div className="row">
-            <div className="col-12 col-md-6 col-lg-3">
+          <div className="row py-5">
+            <div className="col-12 col-md-6 col-lg-3 mb-5">
               <div className="card bg-transparent text-light text-center m-3 ">
                 <i className="bi bi-houses-fill"></i>
-                <div className="card-body">
+                <div className="card-body mt-2">
                   <h4 className="orangeColor">100</h4>
-                  <p>Projects Annually</p>
+                  <p className="mt-2 mb-0">Projects Annually</p>
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-3">
+            <div className="col-12 col-md-6 col-lg-3 mb-5">
               <div className="card bg-transparent text-light text-center m-3">
                 <i className="bi bi-trophy"></i>
-                <div className="card-body">
+                <div className="card-body mt-2">
                   <h4 className="orangeColor">45</h4>
-                  <p>Awards</p>
+                  <p className="mt-2 mb-0">Awards</p>
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-3">
+            <div className="col-12 col-md-6 col-lg-3 mb-5">
               <div className="card bg-transparent text-light text-center m-3">
                 <i className="bi bi-chat-heart"></i>
-                <div className="card-body">
+                <div className="card-body mt-2">
                   <h4 className="orangeColor">98%</h4>
-                  <p>Positive Reviews</p>
+                  <p className="mt-2 mb-0">Positive Reviews</p>
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-3">
+            <div className="col-12 col-md-6 col-lg-3 mb-5">
               <div className="card bg-transparent text-light text-center m-3">
                 <i className="bi bi-person-arms-up"></i>
-                <div className="card-body">
+                <div className="card-body mt-2">
                   <h4 className="orangeColor">147k</h4>
-                  <p>Happy Customers</p>
+                  <p className="mt-2 mb-0">Happy Customers</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>{" "}
+        </div>
         <div className="hero-shadow"></div>
-      </section>
-
-      <section className="bg-light h-100">
-        <div style={{ height: "500px" }}></div>
       </section>
     </>
   );

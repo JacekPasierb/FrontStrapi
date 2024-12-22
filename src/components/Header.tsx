@@ -42,7 +42,10 @@ const Header = () => {
                 <button type="button" className="btn btn-dark mb-4  mb-sm-0">
                   See services
                 </button>
-                <button type="button" className="btn orangeBgColor  ms-sm-5 text-light">
+                <button
+                  type="button"
+                  className="btn orangeBgColor  ms-sm-5 text-light"
+                >
                   Contact us
                 </button>
               </div>
@@ -57,7 +60,10 @@ const Header = () => {
                 <button type="button" className="btn btn-dark mb-4  mb-sm-0">
                   See services
                 </button>
-                <button type="button" className="btn orangeBgColor ms-sm-5 text-light">
+                <button
+                  type="button"
+                  className="btn orangeBgColor ms-sm-5 text-light"
+                >
                   Contact us
                 </button>
               </div>
@@ -69,7 +75,10 @@ const Header = () => {
               <h2 className="mb-3">
                 We can handle the most ambitious projects
               </h2>
-              <button type="button" className="btn orangeBgColor text-light mt-5">
+              <button
+                type="button"
+                className="btn orangeBgColor text-light mt-5"
+              >
                 Contact us
               </button>
             </div>

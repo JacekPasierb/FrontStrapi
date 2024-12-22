@@ -2,6 +2,7 @@ import "./App.css";
 import Aboutus from "./components/Aboutus";
 import Header from "./components/Header";
 import Nav from "./components/Nav/Nav";
+import Projects from "./components/Projects";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Header />
       <main>
         <Aboutus />
+        <Projects />
       </main>
     </>
   );
