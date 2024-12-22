@@ -176,7 +176,7 @@ body {
 
 .projects .card i,
 .projects .card h3 {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 .projects .card h3 {
   font-weight: bold;
@@ -188,6 +188,12 @@ body {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
+.projects .card-img-top {
+  object-fit: cover;
+  object-position: center;
+  /* height: 100%; */
+  min-height: 100%;
+}
 
 @media (min-width: 576px) {
   .home .btn {
@@ -196,6 +202,10 @@ body {
 
   .aboutus h4 {
     font-size: 1.8rem;
+  }
+
+  .projects .card i {
+    font-size: 3.5rem;
   }
 }
 
@@ -214,6 +224,10 @@ body {
   .aboutus-img {
     height: auto;
     margin-block: auto;
+  }
+  .projects .card i,
+  .projects .card h3 {
+    font-size: 2rem;
   }
 }
 
