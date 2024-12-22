@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import GalleryModal from "./modal/GalleryModal.js";
+import ContactModal from "./modal/ContactModal.js";
 
 const Projects: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
+  const [showModalContact, setShowModalContact] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const images = [
@@ -45,6 +47,10 @@ const Projects: React.FC = () => {
 
   const closeModal = () => {
     setShowModal(false);
+  };
+
+  const toggleModalContact = () => {
+    setShowModalContact(!showModalContact);
   };
 
   const changeIndex = (index: number) => {
@@ -108,10 +114,16 @@ const Projects: React.FC = () => {
               <p className="m-0">Tell us more about your project!</p>
             </div>
             <div className="col-12 col-xl-6 mb-5 mb-xl-0 text-xl-end">
-              <button className="btn btn-light ">contact us</button>
+              <button
+                className="btn btn-light "
+                onClick={() => toggleModalContact()}
+              >
+                contact us
+              </button>
             </div>
           </div>
         </div>
+        {showModalContact && <ContactModal onClose={toggleModalContact} />}
       </section>
     </>
   );

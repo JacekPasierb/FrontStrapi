@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import ContactModal from "./modal/ContactModal";
 
-const Header = () => {
+const Header: React.FC = () => {
+  const [showModalContact, setShowModalContact] = useState(false);
+
+  const toggleModalContact = () => {
+    setShowModalContact(!showModalContact);
+  };
+
   return (
     <header id="home" className="home ">
       <div
@@ -45,6 +52,7 @@ const Header = () => {
                 <button
                   type="button"
                   className="btn orangeBgColor  ms-sm-5 text-light"
+                  onClick={() => toggleModalContact()}
                 >
                   Contact us
                 </button>
@@ -63,6 +71,7 @@ const Header = () => {
                 <button
                   type="button"
                   className="btn orangeBgColor ms-sm-5 text-light"
+                  onClick={() => toggleModalContact()}
                 >
                   Contact us
                 </button>
@@ -78,6 +87,7 @@ const Header = () => {
               <button
                 type="button"
                 className="btn orangeBgColor text-light mt-5"
+                onClick={() => toggleModalContact()}
               >
                 Contact us
               </button>
@@ -110,6 +120,7 @@ const Header = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+      {showModalContact && <ContactModal onClose={toggleModalContact} />}
     </header>
   );
 };
