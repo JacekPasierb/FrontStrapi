@@ -1,7 +1,7 @@
 import React from "react";
 import css from "./Nav.module.css";
 
-const Nav = () => {
+const Nav: React.FC = () => {
   const closeNav = () => {
     const nav = document.querySelector(".navbar-collapse");
     if (nav && nav.classList.contains("show")) {
