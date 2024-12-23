@@ -80,7 +80,7 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
           {" "}
           <button
             onClick={onClose}
-            className=".btn"
+            className="btn"
             style={{
               position: "absolute",
               top: "10px",
