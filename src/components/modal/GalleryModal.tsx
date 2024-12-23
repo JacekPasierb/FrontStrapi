@@ -86,6 +86,8 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
               top: "10px",
               right: "10px",
               background: "transparent",
+              backgroundColor: "rgba(0,0,0,0.8)",
+              padding: "0.7em 0.7em",
               border: "none",
               color: "#fff",
 

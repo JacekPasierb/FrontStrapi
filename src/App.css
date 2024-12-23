@@ -253,6 +253,9 @@ body {
   .projects .card i {
     font-size: 3.5rem;
   }
+  .modalGallery .btn {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 992px) {
