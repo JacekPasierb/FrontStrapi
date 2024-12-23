@@ -1,6 +1,7 @@
 import React from "react";
+import aboutImage from "../image/home-variant-3-555x500.jpg";
 
-const Aboutus:React.FC = () => {
+const Aboutus: React.FC = () => {
   return (
     <>
       <section id="aboutus" className="aboutus py-5 ">
@@ -77,7 +78,7 @@ const Aboutus:React.FC = () => {
             </div>
             <div className="col-lg-6 px-md-5 ">
               <img
-                src="../image/home-variant-3-555x500.jpg"
+                src={aboutImage}
                 alt="men working with project"
                 className="card-img-top aboutus-img"
               />
