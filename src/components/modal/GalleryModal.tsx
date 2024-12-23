@@ -88,11 +88,10 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
               background: "transparent",
               border: "none",
               color: "#fff",
-              fontSize: "24px",
+
               cursor: "pointer",
               zIndex: 1000,
             }}
-            
             aria-label="Close"
           >
             ×
