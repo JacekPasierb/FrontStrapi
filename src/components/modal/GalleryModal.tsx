@@ -76,24 +76,27 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
             justifyContent: "space-between",
             overflow: "hidden",
           }}
-        > <button
-        onClick={onClose}
-        style={{
-          position: "absolute",
-          top: "10px",
-          right: "10px",
-          background: "transparent",
-          border: "none",
-          color: "#fff",
-          fontSize: "24px",
-          cursor: "pointer",
-          zIndex: 1000,
-        }}
-        aria-label="Close"
-      >
-        ×
-      </button>
-         
+        >
+          {" "}
+          <button
+            onClick={onClose}
+            className=".btn"
+            style={{
+              position: "absolute",
+              top: "10px",
+              right: "10px",
+              background: "transparent",
+              border: "none",
+              color: "#fff",
+              fontSize: "24px",
+              cursor: "pointer",
+              zIndex: 1000,
+            }}
+            
+            aria-label="Close"
+          >
+            ×
+          </button>
           <div
             className="modal-body"
             style={{
@@ -116,7 +119,6 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
               }}
             />
           </div>
-
           {/* Kontrolki nawigacyjne */}
           <div
             className="carousel-controls"
@@ -158,7 +160,6 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
               &#10095;
             </button>
           </div>
-
           {/* Miniaturki */}
           <div
             className="thumbnail-container"
