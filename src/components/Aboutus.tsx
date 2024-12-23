@@ -77,7 +77,7 @@ const Aboutus:React.FC = () => {
             </div>
             <div className="col-lg-6 px-md-5 ">
               <img
-                src="src/image/home-variant-3-555x500.jpg"
+                src="../image/home-variant-3-555x500.jpg"
                 alt="men working with project"
                 className="card-img-top aboutus-img"
               />
