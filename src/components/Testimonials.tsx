@@ -48,7 +48,7 @@ const Testimonials:React.FC = () => {
             {opinions.map((opinion, index) => (
               <div
                 className={`carousel-item ${index == 0 && "active"} `}
-                data-bs-interval="100000"
+                data-bs-interval="10000"
                 key={index}
               >
                 <OpinionCard opinion={opinion} />
