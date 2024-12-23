@@ -76,13 +76,24 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
             justifyContent: "space-between",
             overflow: "hidden",
           }}
-        >
-          <div className="modal-header"> <button
-              type="button"
-              className="btn-close"
-              onClick={onClose}
-              aria-label="Close"
-            ></button></div>
+        > <button
+        onClick={onClose}
+        style={{
+          position: "absolute",
+          top: "10px",
+          right: "10px",
+          background: "transparent",
+          border: "none",
+          color: "#fff",
+          fontSize: "24px",
+          cursor: "pointer",
+          zIndex: 1000,
+        }}
+        aria-label="Close"
+      >
+        ×
+      </button>
+         
           <div
             className="modal-body"
             style={{
