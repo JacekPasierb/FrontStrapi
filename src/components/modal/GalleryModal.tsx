@@ -77,6 +77,12 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
             overflow: "hidden",
           }}
         >
+          <div className="modal-header"> <button
+              type="button"
+              className="btn-close"
+              onClick={onClose}
+              aria-label="Close"
+            ></button></div>
           <div
             className="modal-body"
             style={{
