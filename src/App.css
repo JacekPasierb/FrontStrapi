@@ -156,6 +156,15 @@ p {
   z-index: 0;
 }
 
+.parallax-background-testimonials {
+  position: relative;
+  background-image: url("./image/construction-testimonials.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
 /* Achievements */
 
 .achievements i {
@@ -287,6 +296,35 @@ p {
   font-size: 1.4rem;
 }
 
+/* Testimontials */
+
+.testimonials img {
+  width: 100px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.testimonials-img-box {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.testimonials h5 {
+  font-size: 1.6rem;
+}
+
+.testimonials p {
+  font-size: 1.8rem;
+}
+
+.testimonials .carousel-item {
+  height: 400px;
+}
+
+.carousel-indicators .active {
+  background-color: var(--color-primary);
+}
 /* Modal */
 
 .modalContact h5 {
@@ -327,6 +365,10 @@ p {
 
   .modalGallery .btn {
     font-size: 4rem;
+  }
+
+  .testimonials .carousel-item {
+    height: 350px;
   }
 }
 
@@ -370,6 +412,10 @@ p {
 
   .modalGallery .btn {
     font-size: 4rem;
+  }
+
+  .testimonials .carousel-item {
+    height: 350px;
   }
 }
 
