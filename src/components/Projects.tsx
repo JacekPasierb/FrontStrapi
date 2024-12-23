@@ -2,6 +2,14 @@ import React, { useState } from "react";
 import GalleryModal from "./modal/GalleryModal.js";
 import ContactModal from "./modal/ContactModal.js";
 
+// Importowanie obrazów
+import project1 from "../image/project-1-1200x800.jpg";
+import project2 from "../image/project-2-1200x800.jpg";
+import project3 from "../image/project-3-1200x800.jpg";
+import project4 from "../image/project-4-1200x800.jpg";
+import project5 from "../image/project-5-1200x800.jpg";
+import project6 from "../image/project-6-1200x800.jpg";
+
 const Projects: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
   const [showModalContact, setShowModalContact] = useState(false);
@@ -9,36 +17,37 @@ const Projects: React.FC = () => {
 
   const images = [
     {
-      src: "src/image/project-1-1200x800.jpg",
+      src: project1,
       alt: "White City Lofts",
       category: "Multifamily",
     },
     {
-      src: "src/image/project-2-1200x800.jpg",
+      src: project2,
       alt: "MetalWorking Plant",
       category: "Industrial",
     },
     {
-      src: "src/image/project-3-1200x800.jpg",
+      src: project3,
       alt: "Mcmillan's House",
       category: "Residential",
     },
     {
-      src: "src/image/project-4-1200x800.jpg",
+      src: project4,
       alt: "ChildCare Center",
       category: "Healthcare",
     },
     {
-      src: "src/image/project-5-1200x800.jpg",
+      src: project5,
       alt: "City Stadium",
       category: "Social",
     },
     {
-      src: "src/image/project-6-1200x800.jpg",
+      src: project6,
       alt: "Social Housing",
       category: "Commercial",
     },
   ];
+
 
   const openModal = (index: number) => {
     setActiveIndex(index);
