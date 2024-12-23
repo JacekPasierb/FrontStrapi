@@ -237,8 +237,8 @@ body {
   font-size: 1.3rem;
 }
 
-.modalGallery .btn{
-font-size: 2rem;
+.modalGallery .modal-content .modal-dialog .btn {
+  font-size: 2rem;
 }
 
 @media (min-width: 576px) {
@@ -284,9 +284,9 @@ font-size: 2rem;
     font-size: 2rem;
   }
 
-  .modalGallery .btn{
+  .modalGallery .btn {
     font-size: 4rem;
-    }
+  }
 }
 
 @media (min-width: 1400px) {
