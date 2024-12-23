@@ -237,6 +237,10 @@ body {
   font-size: 1.3rem;
 }
 
+.modalGallery .btn{
+font-size: 2rem;
+}
+
 @media (min-width: 576px) {
   .home .btn {
     padding: 1em 2em;
@@ -279,6 +283,10 @@ body {
   .modalContact h5 {
     font-size: 2rem;
   }
+
+  .modalGallery .btn{
+    font-size: 4rem;
+    }
 }
 
 @media (min-width: 1400px) {

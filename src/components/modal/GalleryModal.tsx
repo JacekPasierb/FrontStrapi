@@ -43,7 +43,7 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
 
   return (
     <div
-      className="modal"
+      className="modal modalGallery"
       tabIndex={-1}
       style={{
         display: "block",
