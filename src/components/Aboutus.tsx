@@ -1,5 +1,7 @@
 import React from "react";
 import aboutImage from "../image/home-variant-3-555x500.jpg";
+import { aboutUs } from "../data/aboutUs";
+import FeautureCard from "./cards/FeautureCard";
 
 const Aboutus: React.FC = () => {
   return (
@@ -7,7 +9,7 @@ const Aboutus: React.FC = () => {
       <section id="aboutus" className="aboutus py-5 ">
         <div className="container py-5">
           <div>
-            <h2 className="text-center ">About Us</h2>
+            <h3 className="text-center ">About Us</h3>
             <div className="row justify-content-center">
               <div className="col-1">
                 <hr className="orangeColor" />
@@ -26,53 +28,11 @@ const Aboutus: React.FC = () => {
               </p>
               <div className="aboutus-cards">
                 <div className="row">
-                  <div className="card border-0 col-12 p-4 mb-4">
-                    <div className="row g-0">
-                      <div className="col-1 d-flex justify-content-end align-items-start ">
-                        <i className="bi bi-card-checklist orangeColor ms-4"></i>
-                      </div>
-                      <div className="card-body col-11">
-                        <h3 className="card-title mb-3">
-                          Professional Approach
-                        </h3>
-                        <p className="card-text">
-                          Our approach to building sustainable facilities is
-                          based on high professionalism and delivering projects
-                          with fairness and excellence.
-                        </p>
-                      </div>
+                  {aboutUs.map((value, index) => (
+                    <div className="card border-0 col-12 p-4 mb-4" key={index}>
+                      <FeautureCard value={value} />
                     </div>
-                  </div>
-                  <div className="card border-0 col-12 p-4 mb-4">
-                    <div className="row g-0">
-                      <div className="col-1 d-flex justify-content-end align-items-start ">
-                        <i className="bi bi-people orangeColor ms-4"></i>
-                      </div>
-                      <div className="card-body col-11">
-                        <h3 className="card-title  mb-3">Expert team</h3>
-                        <p className="card-text">
-                          We employ the best experts in construction that make
-                          our every project a reliable one. You can trust each
-                          member of Edifice team.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="card border-0 col-12 p-4 mb-4">
-                    <div className="row g-0">
-                      <div className="col-1 d-flex justify-content-end align-items-start ">
-                        <i className="bi bi-pencil orangeColor ms-4"></i>
-                      </div>
-                      <div className="card-body col-11">
-                        <h3 className="card-title  mb-3">Best solutions</h3>
-                        <p className="card-text">
-                          Our company offers top-notch construction solutions to
-                          corporate and individual clients worldwide, while also
-                          covering their needs.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>

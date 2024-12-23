@@ -1,3 +1,15 @@
+/* Root Variables */
+:root {
+  --font-base: "Poppins", serif;
+  --font-size-base: 1.6rem;
+  --color-primary: rgb(255, 102, 0);
+  --color-light: rgb(255, 255, 255);
+  --color-dark: rgb(0, 0, 0);
+  --color-overlay: rgba(0, 0, 0, 0.6);
+  --color-highlight: rgba(255, 165, 0, 0.9);
+  --transition-base: 0.3s ease;
+}
+/* General Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,13 +22,55 @@ html {
 }
 
 body {
-  font-family: "Poppins", serif;
-  font-size: 1.6rem;
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
   position: relative;
+  line-height: 1.6;
 }
 
 [id] {
   scroll-margin-top: 10px;
+}
+/* Typography */
+h2,
+h3 {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+
+  transition: color 0.5s ease;
+}
+
+h4:hover {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+/* Utilities */
+.orangeBgColor {
+  background-color: var(--color-primary);
+}
+
+.orangeColor {
+  color: var(--color-primary);
 }
 
 .hero-shadow {
@@ -25,37 +79,31 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--color-overlay);
   z-index: -1;
 }
 
-.navbar-light .navbar-nav .nav-link.active {
-  color: rgb(255, 102, 0);
-}
-
-.orangeBgColor {
-  background-color: rgb(255, 102, 0);
-}
-
-.orangeColor {
-  color: rgb(255, 102, 0);
-}
-/* nawigacja */
-
+/* Navbar */
 .navbar-light .navbar-brand {
   font-size: 2.2rem;
-  color: rgb(255, 102, 0);
+  color: var(--color-primary);
 }
 
-.nav-link,
-.navbar-toggler-icon {
+.navbar-light .navbar-nav .nav-link {
   font-size: 1.4rem;
   text-transform: uppercase;
 }
 
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--color-primary);
+}
+
 .navbar-toggler {
   padding: 1em 2em;
+  font-size: 1.4rem;
 }
+
+/* Carousel */
 
 .carousel-item {
   position: relative;
@@ -64,59 +112,39 @@ body {
   background-size: cover;
   z-index: 0;
 }
+
 .carousel-img-one {
   background-image: url("./image/slider-slide-corporate-1base.jpg");
 }
+
 .carousel-img-two {
   background-image: url("./image/slider-slide-5-1920x1280base.jpg");
 }
+
 .carousel-img-three {
   background-image: url("./image/slider-slide-corporateBase.jpg");
 }
 
-.home h2 {
-  font-size: 2.6rem;
-}
-
-.home p {
-  font-size: 1.4rem;
-}
+/* Home Section */
 
 .home .btn {
   font-size: 1.4rem;
   padding: 0.5em 1em;
   text-transform: uppercase;
+  transition: background-color var(--transition-base); /* remove line ?*/
 }
 
-/* aboutus */
+/* About Us */
 
-.aboutus h2,
-.projects h2 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.aboutus p {
-  font-size: 1.4rem;
+.aboutus i {
+  font-size: 3rem;
 }
 
 .aboutus-img {
   object-fit: cover;
 }
 
-.aboutus i {
-  font-size: 3rem;
-}
-
-.aboutus-cards h3 {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.aboutus-cards p {
-  font-size: 1.4rem;
-}
+/* Parallax */
 
 .parallax-background {
   position: relative;
@@ -128,27 +156,30 @@ body {
   z-index: 0;
 }
 
+/* Achievements */
+
 .achievements i {
   font-size: 4.4rem;
 }
 
 .achievements h4 {
   font-size: 4rem;
-  font-weight: bold;
+  text-transform: none;
 }
 
 .achievements p {
-  font-size: 1.4rem;
   text-transform: uppercase;
 }
 
+/* Projects */
+
 .projects .card {
   position: relative;
-  overflow: hidden; /* Ukryj wystające elementy */
+  overflow: hidden;
 }
 
 .projects .card-img {
-  transition: opacity 0.5s ease; /* Animacja dla efektu */
+  transition: opacity 0.5s ease;
 }
 
 .projects .card-img-overlay {
@@ -166,33 +197,33 @@ body {
 }
 
 .projects .card:hover .card-img {
-  opacity: 0.3; /* Przyciemnienie zdjęcia */
+  opacity: 0.3;
 }
 
 .projects .card:hover .card-img-overlay {
-  background: rgba(255, 165, 0, 0.9);
-  opacity: 1; /* Pokaż tekst */
+  background: var(--color-highlight);
+  opacity: 1;
 }
 
 .projects .card i,
 .projects .card h3 {
   font-size: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
-.projects .card h3 {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.projects .card p,
-.projects .card h3,
-.projects .card i {
+
+.projects .card p {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .projects .card-img-top {
   object-fit: cover;
   object-position: center;
-  /* height: 100%; */
   min-height: 100%;
+}
+
+/* Contact */
+.contact p {
+  font-size: 1.8rem;
 }
 
 .contact p,
@@ -200,21 +231,15 @@ body {
   text-transform: uppercase;
 }
 
-.contact p {
-  font-size: 1.8rem;
-}
 .contact .btn {
   font-size: 1.4rem;
   padding: 1em 1.8em;
-}
-
-.contact .btn {
-  transition: background-color 0.3s;
+  transition: background-color var(--transition-base);
 }
 
 .contact .btn:hover {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: var(--color-dark);
+  color: var(--color-light);
   border: none;
 }
 
@@ -223,9 +248,54 @@ body {
   box-shadow: none;
 }
 
+/* Services */
+
+.services i {
+  font-size: 3rem;
+}
+
+/* Pricing */
+
+.pricing .card {
+  max-width: 300px;
+}
+
+.pricing .btn {
+  font-size: 1.4rem;
+  padding: 0.8em 1.8em;
+  text-transform: uppercase;
+  transition: background-color var(--transition-base);
+}
+
+.pricing .btn:hover {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  border: none;
+}
+
+.pricing h4 {
+  font-size: 1.6rem;
+}
+.pricing p {
+  font-size: 1.4rem;
+}
+
+.pricing span.price {
+  font-size: 4rem;
+}
+.pricing span.month {
+  font-size: 1.4rem;
+}
+
+/* Modal */
+
 .modalContact h5 {
   font-size: 1.6rem;
   text-transform: uppercase;
+}
+
+.modalGallery .btn {
+  font-size: 2rem;
 }
 
 .modalContact i {
@@ -236,11 +306,12 @@ body {
 .modalContact textarea {
   font-size: 1.3rem;
 }
-
-.modalGallery .btn {
-  font-size: 2rem;
+/* Responsive Design */
+.label {
+  position: absolute;
+  top: -40px;
+  right: 40px;
 }
-
 @media (min-width: 576px) {
   .home .btn {
     padding: 1em 2em;
@@ -253,14 +324,19 @@ body {
   .projects .card i {
     font-size: 3.5rem;
   }
+
   .modalGallery .btn {
     font-size: 4rem;
   }
 }
 
-@media (min-width: 992px) {
-  .home h2 {
+@media (min-width: 768px) {
+  h2 {
     font-size: 4.4rem;
+  }
+
+  h3 {
+    font-size: 2.4em;
   }
 
   .home p {
@@ -270,6 +346,11 @@ body {
   .aboutus h4 {
     font-size: 2.4rem;
   }
+
+  .pricing h4 {
+    font-size: 2rem;
+  }
+
   .aboutus-img {
     height: auto;
     margin-block: auto;

@@ -71,7 +71,7 @@ const Projects: React.FC = () => {
       <section id="projects" className="projects py-5 ">
         <div className="container py-5">
           <div>
-            <h2 className="text-center ">Our Projects</h2>
+            <h3 className="text-center ">Our Projects</h3>
             <div className="row justify-content-center">
               <div className="col-1">
                 <hr className="orangeColor" />
@@ -90,7 +90,7 @@ const Projects: React.FC = () => {
                   <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center text-white p-3 overlay-effect">
                     <i className="bi bi-image"></i>
                     <p>{image.category}</p>
-                    <h3 className="card-title">{image.alt}</h3>
+                    <h4 className="card-title">{image.alt}</h4>
                     <p>Professional construction services</p>
                     <i className="bi bi-plus-lg"></i>
                   </div>
