@@ -1,19 +1,13 @@
 import React from "react";
 import { services } from "../data/services";
 import FeautureCard from "./cards/FeautureCard";
+import TitleSection from "./TitleSection";
 
 const Services: React.FC = () => {
   return (
     <section id="services" className="services py-5 ">
       <div className="container py-5">
-        <div>
-          <h3 className="text-center ">Our Services</h3>
-          <div className="row justify-content-center">
-            <div className="col-1">
-              <hr className="orangeColor" />
-            </div>
-          </div>
-        </div>
+        <TitleSection tittle="Our Services" />
 
         <div className="row my-5">
           {services.map((value, index) => (

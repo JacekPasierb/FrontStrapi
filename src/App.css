@@ -325,6 +325,47 @@ p {
 .carousel-indicators .active {
   background-color: var(--color-primary);
 }
+
+/* Newst Recent */
+.news .carousel-item {
+  height: 640px;
+}
+
+.news .carousel-caption {
+  position: static;
+}
+
+.news h4:hover {
+  color: var(--color-primary) !important;
+}
+.news .date,
+.news .author {
+  font-size: 1.4rem;
+}
+
+.news .date {
+  transition: color 0.3s ease;
+}
+
+.news .date:hover {
+  color: var(--color-dark);
+  cursor: pointer;
+}
+
+.news .author {
+  transition: color 0.3s ease;
+}
+
+.news .author:hover {
+  color: var(--color-primary) !important;
+  cursor: pointer;
+}
+
+/* Location */
+
+.location .map {
+  height: 300px;
+}
 /* Modal */
 
 .modalContact h5 {
@@ -369,6 +410,10 @@ p {
 
   .testimonials .carousel-item {
     height: 350px;
+  }
+
+  .location .map {
+    height: 640px;
   }
 }
 

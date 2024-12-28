@@ -2,20 +2,14 @@ import React from "react";
 import aboutImage from "../image/home-variant-3-555x500.jpg";
 import { aboutUs } from "../data/aboutUs";
 import FeautureCard from "./cards/FeautureCard";
+import TitleSection from "./TitleSection";
 
 const Aboutus: React.FC = () => {
   return (
     <>
       <section id="aboutus" className="aboutus py-5 ">
         <div className="container py-5">
-          <div>
-            <h3 className="text-center ">About Us</h3>
-            <div className="row justify-content-center">
-              <div className="col-1">
-                <hr className="orangeColor" />
-              </div>
-            </div>
-          </div>
+          <TitleSection tittle="About Us"/>
           <div className="row my-5  ">
             <div className="col-lg-6 px-md-5 ">
               <p>

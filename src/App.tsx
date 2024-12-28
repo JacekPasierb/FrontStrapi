@@ -1,6 +1,7 @@
 import "./App.css";
 import Aboutus from "./components/Aboutus";
 import Header from "./components/Header";
+import Location from "./components/Location";
 import Nav from "./components/Nav/Nav";
 import News from "./components/News";
 import Pricing from "./components/Pricing";
@@ -19,7 +20,8 @@ const App = () => {
         <Services />
         <Pricing />
         <Testimonials />
-        <News/>
+        <News />
+        <Location />
       </main>
     </>
   );

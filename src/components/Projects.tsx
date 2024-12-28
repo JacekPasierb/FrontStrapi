@@ -9,6 +9,7 @@ import project3 from "../image/project-3-1200x800.jpg";
 import project4 from "../image/project-4-1200x800.jpg";
 import project5 from "../image/project-5-1200x800.jpg";
 import project6 from "../image/project-6-1200x800.jpg";
+import TitleSection from "./TitleSection.js";
 
 const Projects: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
@@ -69,14 +70,7 @@ const Projects: React.FC = () => {
     <>
       <section id="projects" className="projects py-5 ">
         <div className="container py-5">
-          <div>
-            <h3 className="text-center ">Our Projects</h3>
-            <div className="row justify-content-center">
-              <div className="col-1">
-                <hr className="orangeColor" />
-              </div>
-            </div>
-          </div>
+         <TitleSection tittle="Our Projects"/>
           <div className="row my-5">
             {images.map((image, index) => (
               <div
