@@ -48,7 +48,6 @@ const Projects: React.FC = () => {
     },
   ];
 
-
   const openModal = (index: number) => {
     setActiveIndex(index);
     setShowModal(true);

@@ -2,7 +2,7 @@ import React from "react";
 import OpinionCard from "./cards/OpinionCard";
 import { opinions } from "../data/opinions";
 
-const Testimonials:React.FC = () => {
+const Testimonials: React.FC = () => {
   return (
     <section
       id="testimonials"
