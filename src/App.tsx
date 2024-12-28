@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Location from "./components/Location";
 import Nav from "./components/Nav/Nav";
 import News from "./components/News";
+import PreFooter from "./components/PreFooter";
 import Pricing from "./components/Pricing";
 import Projects from "./components/Projects";
 import Services from "./components/Services";
@@ -22,6 +23,7 @@ const App = () => {
         <Testimonials />
         <News />
         <Location />
+        <PreFooter/>
       </main>
     </>
   );

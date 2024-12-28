@@ -27,6 +27,14 @@ body {
   position: relative;
   line-height: 1.6;
 }
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
 
 [id] {
   scroll-margin-top: 10px;
@@ -366,6 +374,28 @@ p {
 .location .map {
   height: 300px;
 }
+
+/* PreFooterv*/
+
+.preFooter h6 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.preFooter .nav-link {
+  font-size: 1.4rem;
+  padding-left: 0;
+}
+
+.preFooter .nav-link:hover {
+  color: var(--color-primary) !important;
+}
+
+.preFooter a:hover {
+  color: var(--color-primary) !important;
+}
+
 /* Modal */
 
 .modalContact h5 {
@@ -462,6 +492,10 @@ p {
   .testimonials .carousel-item {
     height: 350px;
   }
+
+  .preFooter h6 {
+    font-size: 1.6rem;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -477,5 +511,9 @@ p {
   }
   .carousel-img-three {
     background-image: url("./image/slider-slide-corporate.jpg");
+  }
+
+  .preFooter h6 {
+    font-size: 1.8rem;
   }
 }
