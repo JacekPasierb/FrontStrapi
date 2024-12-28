@@ -396,6 +396,16 @@ p {
   color: var(--color-primary) !important;
 }
 
+/* Footer */
+
+Footer a {
+  color: var(--color-light);
+  transition: color 0.8s ease;
+}
+
+Footer a:hover {
+  color: var(--color-primary);
+}
 /* Modal */
 
 .modalContact h5 {

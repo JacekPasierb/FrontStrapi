@@ -1,5 +1,6 @@
 import "./App.css";
 import Aboutus from "./components/Aboutus";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Location from "./components/Location";
 import Nav from "./components/Nav/Nav";
@@ -23,8 +24,9 @@ const App = () => {
         <Testimonials />
         <News />
         <Location />
-        <PreFooter/>
+        <PreFooter />
       </main>
+      <Footer />
     </>
   );
 };

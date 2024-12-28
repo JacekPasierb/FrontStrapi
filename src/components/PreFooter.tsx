@@ -1,6 +1,6 @@
 import React from "react";
 
-const PreFooter = () => {
+const PreFooter: React.FC = () => {
   return (
     <section className="preFooter bg-dark text-light">
       <div className="container py-5">
@@ -39,7 +39,9 @@ const PreFooter = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-muted " href="#news">News</a>
+                <a className="nav-link text-muted " href="#news">
+                  News
+                </a>
               </li>
             </ul>
           </div>
