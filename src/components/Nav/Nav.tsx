@@ -10,7 +10,10 @@ const Nav: React.FC = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+    <nav
+      className="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top"
+      id="navbar-example"
+    >
       <div className="container">
         <a className="navbar-brand" href="#">
           <i className={`bi bi-buildings ${css.orangeColor} me-4`}></i>
@@ -29,7 +32,7 @@ const Nav: React.FC = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto">
-            <a className="nav-link " href="#home" onClick={closeNav}>
+            <a className="nav-link active" href="#home" onClick={closeNav}>
               Home
             </a>
             <a className="nav-link" href="#aboutus" onClick={closeNav}>

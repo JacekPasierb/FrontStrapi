@@ -10,6 +10,10 @@ interface PricingCardProps {
 }
 
 const PricingCard: React.FC<PricingCardProps> = ({ pricin }) => {
+  if (!pricin) {
+    return <div>Brak danych</div>; // Jeśli pricin jest null, renderujemy komunikat
+  }
+
   return (
     <div className="card h-100 m-auto mt-5 p-4 text-center">
       {pricin.popular && (
